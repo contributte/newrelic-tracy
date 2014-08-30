@@ -1,0 +1,28 @@
+{
+    "name": "vrtak-cz/newrelic-tracy",
+    "description": "NewRelic PHP agent integration for Tracy",
+    "type": "library",
+	"keywords": ["tracy", "newrelic"],
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Patrik Votoček",
+			"email": "patrik@votocek.cz",
+			"homepage": "http://patrik.votocek.cz",
+			"role": "Developer"
+		}
+	],
+	"support": {
+		"issues":"https://github.com/Vrtak-CZ/NewRelic-Tracy/issues",
+		"source":"https://github.com/Vrtak-CZ/NewRelic-Tracy"
+	},
+	"autoload": {
+		"psr-4": {
+			"VrtakCZ\\NewRelic\\Tracy\\": "src/"
+		}
+	},
+    "require": {
+		"php": ">=5.3.0",
+		"tracy/tracy": "~2.2.0"
+	}
+}
