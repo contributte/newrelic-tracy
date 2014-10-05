@@ -1,6 +1,8 @@
 # [NewRelic](http://newrelic.com) PHP agent integration for [Tracy](http://tracy.nette.org)
 
-[![Latest Stable Version](https://poser.pugx.org/Vrtak-CZ/NewRelic-Tracy/version.png)](https://packagist.org/packages/vrtak-cz/newrelic-tracy) [![Composer Downloads](https://poser.pugx.org/Vrtak-CZ/NewRelic-Tracy/d/total.png)](https://packagist.org/packages/vrtak-cz/newrelic-tracy) [![Dependencies Status](http://depending.in/Vrtak-CZ/NewRelic-Tracy.png?branch=master)](http://depending.in/Vrtak-CZ/NewRelic-Tracy)
+[![Latest Stable Version](https://poser.pugx.org/Vrtak-CZ/NewRelic-Tracy/version.png)](https://packagist.org/packages/nella/simple-hash-authenticator)
+[![Composer Downloads](https://poser.pugx.org/Vrtak-CZ/NewRelic-Tracy/d/total.png)](https://packagist.org/packages/vrtak-cz/newrelic-tracy)
+[![Dependency Status](https://www.versioneye.com/user/projects/540228ffeab62a956f00008f/badge.svg?style=flat)](https://www.versioneye.com/user/projects/540228ffeab62a956f00008f)
 
 ## Installation
 
