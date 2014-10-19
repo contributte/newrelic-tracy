@@ -2,8 +2,11 @@
 
 namespace VrtakCZ\NewRelic\Tracy;
 
-class Logger extends \Tracy\Logger
+class Logger implements \Tracy\ILogger
 {
+	/** @var \Tracy\ILogger */
+	private $oldLogger;
+
 	/** @var array */
 	private $logLevel;
 
@@ -12,22 +15,17 @@ class Logger extends \Tracy\Logger
 	 */
 	public function __construct(array $logLevel)
 	{
-		$oldLogger = \Tracy\Debugger::getLogger();
-		$this->emailSnooze =& $oldLogger->emailSnooze;
-		$this->mailer =& $oldLogger->mailer;
-		$this->directory =& $oldLogger->directory;
-		$this->email =& $oldLogger->email;
-
+		$this->oldLogger = \Tracy\Debugger::getLogger();
 		$this->logLevel = $logLevel;
 	}
 
 	/**
 	 * @param string|array
-	 * @param int
+	 * @param string
 	 */
 	public function log($message, $priority = NULL)
 	{
-		parent::log($message, $priority);
+		$this->oldLogger->log($message, $priority);
 
 		if (in_array($priority, $this->logLevel)) {
 			if (is_array($message)) {
