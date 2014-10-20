@@ -10,6 +10,9 @@ class Logger implements \Tracy\ILogger
 	/** @var array */
 	private $logLevel;
 
+	/** @var bool */
+	public $directory = TRUE; // workaround https://github.com/nette/tracy/pull/74
+
 	/**
 	 * @param array
 	 */
@@ -22,10 +25,11 @@ class Logger implements \Tracy\ILogger
 	/**
 	 * @param string|array
 	 * @param string
+	 * @return string logged error filename
 	 */
 	public function log($message, $priority = NULL)
 	{
-		$this->oldLogger->log($message, $priority);
+		$exceptionFile = $this->oldLogger->log($message, $priority);
 
 		if (in_array($priority, $this->logLevel)) {
 			if (is_array($message)) {
@@ -34,5 +38,7 @@ class Logger implements \Tracy\ILogger
 
 			newrelic_notice_error($message);
 		}
+
+		return $exceptionFile;
 	}
 }
