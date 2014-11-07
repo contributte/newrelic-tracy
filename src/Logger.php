@@ -2,6 +2,10 @@
 
 namespace VrtakCZ\NewRelic\Tracy;
 
+if (!class_exists('Tracy\ILogger')) {
+	require_once __DIR__ . '/ILogger.php';
+}
+
 class Logger implements \Tracy\ILogger
 {
 	/** @var \Tracy\ILogger */
