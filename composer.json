@@ -23,6 +23,6 @@
 	},
     "require": {
 		"php": ">=5.3.0",
-		"tracy/tracy": "~2.2.0"
+		"tracy/tracy": "~2.2.0,~2.3.0"
 	}
 }
