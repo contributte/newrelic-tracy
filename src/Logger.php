@@ -2,7 +2,7 @@
 
 namespace VrtakCZ\NewRelic\Tracy;
 
-if (!class_exists('Tracy\ILogger')) {
+if (!interface_exists('Tracy\ILogger')) {
 	require_once __DIR__ . '/ILogger.php';
 }
 
