@@ -13,7 +13,7 @@ class Bootstrap
 	{
 		static::check();
 
-		if (static::isEnabled()) {
+		if (!static::isEnabled()) {
 			return;
 		}
 
