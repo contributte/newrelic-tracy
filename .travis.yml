@@ -1,0 +1,39 @@
+language: php
+
+sudo: false
+
+env:
+  - NETTE=default
+  - NETTE=~2.2.0
+  - NETTE=~2.2.0 PREFER_LOWEST=true
+  - NETTE=~2.3.0
+  - NETTE=~2.3.0 PREFER_LOWEST=true
+
+php:
+  - 5.3
+  - 5.4
+  - 5.5
+  - 5.6
+  - 7.0
+  - nightly
+  - hhvm
+  - hhvm-nightly
+
+matrix:
+  fast_finish: true
+  allow_failures:
+    - php: 7.0
+    - php: nightly
+    - php: hhvm-nightly
+
+before_install:
+  - composer self-update
+  - php .travis.composer.php
+
+install:
+  - composer install --no-interaction --prefer-source
+  - if  [ $PREFER_LOWEST = 'true' ]; then composer update --prefer-lowest --prefer-stable; fi
+
+script:
+  - vendor/bin/parallel-lint -e php,phpt src tests
+  - vendor/bin/phpcs -sp --standard=vendor/nella/coding-standard/Nella/ruleset.xml src tests
