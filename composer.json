@@ -19,7 +19,10 @@
 	"autoload": {
 		"psr-4": {
 			"VrtakCZ\\NewRelic\\Tracy\\": "src/"
-		}
+		},
+		"files": [
+			"src/compatability.php"
+		]
 	},
 	"require": {
 		"php": ">=5.4.0",

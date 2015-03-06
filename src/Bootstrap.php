@@ -18,10 +18,6 @@ class Bootstrap
 			return;
 		}
 
-		if (!interface_exists('Tracy\ILogger')) {
-			require_once __DIR__ . '/ILogger.php';
-		}
-
 		if ($appName === NULL) {
 			$appName = 'PHP Application';
 		}
