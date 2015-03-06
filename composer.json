@@ -30,4 +30,13 @@
 		"jakub-onderka/php-parallel-lint": "~0.8.0",
 		"nella/coding-standard": "~2.0.0"
 	},
+	"archive": {
+		"exclude": [
+			".gitignore",
+			"/.travis.yml",
+			"/.travis.composer.php"
+		]
+	},
+	"minimum-stability": "dev",
+	"prefer-stable": true
 }
