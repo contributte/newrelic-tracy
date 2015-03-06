@@ -1,8 +1,13 @@
 # [NewRelic](http://newrelic.com) PHP agent integration for [Tracy](http://tracy.nette.org)
 
-[![Latest Stable Version](https://poser.pugx.org/Vrtak-CZ/NewRelic-Tracy/version.png)](https://packagist.org/packages/nella/simple-hash-authenticator)
-[![Composer Downloads](https://poser.pugx.org/Vrtak-CZ/NewRelic-Tracy/d/total.png)](https://packagist.org/packages/vrtak-cz/newrelic-tracy)
-[![Dependency Status](https://www.versioneye.com/user/projects/540228ffeab62a956f00008f/badge.svg?style=flat)](https://www.versioneye.com/user/projects/540228ffeab62a956f00008f)
+[![Build Status](https://img.shields.io/travis/Vrtak-CZ/NewRelic-Tracy.svg?style=flat-square)](https://travis-ci.org/Vrtak-CZ/NewRelic-Tracy)
+[![Latest Stable Version](https://img.shields.io/packagist/v/vrtak-cz/newrelic-tracy.svg?style=flat-square)](https://packagist.org/packages/vrtak-cz/newrelic-tracy)
+[![Composer Downloads](https://img.shields.io/packagist/dt/vrtak-cz/newrelic-tracy.svg?style=flat-square)](https://packagist.org/packages/vrtak-cz/newrelic-tracy)
+[![Dependency Status](https://img.shields.io/versioneye/d/user/projects/540228ffeab62a956f00008f.svg?style=flat-square)](https://www.versioneye.com/user/projects/540228ffeab62a956f00008f)
+
+## Requirements
+- Nette >=2.2.0 (2.2.x support will be removed on 31 Jan 2016)
+- PHP >=5.4.0 (5.4.x support will be removed on 14 Sep 2015)
 
 ## Installation
 
@@ -25,4 +30,4 @@ $license = 'your_licence_key';
 ```
 
 ## License
-NewRelic Nette is licensed under the MIT License - see the LICENSE file for details
+NewRelic Tracy is licensed under the MIT License - see the LICENSE file for details
