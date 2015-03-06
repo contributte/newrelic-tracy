@@ -6,7 +6,7 @@
 [![Dependency Status](https://img.shields.io/versioneye/d/user/projects/540228ffeab62a956f00008f.svg?style=flat-square)](https://www.versioneye.com/user/projects/540228ffeab62a956f00008f)
 
 ## Requirements
-- Nette >=2.2.0 (2.2.x support will be removed on 31 Jan 2016)
+- Tracy >=2.2.0 (2.2.x support will be removed on 31 Jan 2016)
 - PHP >=5.4.0 (5.4.x support will be removed on 14 Sep 2015)
 
 ## Installation
