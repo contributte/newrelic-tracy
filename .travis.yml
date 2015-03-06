@@ -31,5 +31,5 @@ install:
   - if  [ $PREFER_LOWEST = 'true' ]; then composer update --prefer-lowest --prefer-stable; fi
 
 script:
-  - vendor/bin/parallel-lint -e php,phpt src
-  - vendor/bin/phpcs -sp --standard=vendor/nella/coding-standard/Nella/ruleset.xml src
+  - vendor/bin/parallel-lint -e php,phpt srcgc
+  - vendor/bin/phpcs -sp --standard=vendor/nella/coding-standard/Nella/ruleset.xml --ignore=src/ILogger.php src

@@ -4,6 +4,7 @@ namespace VrtakCZ\NewRelic\Tracy\Custom;
 
 class Metrics
 {
+
 	/**
 	 * @param string $name
 	 * @param float $value miliseconds
@@ -14,4 +15,5 @@ class Metrics
 			newrelic_custom_metric('Custom/' . $name, $value);
 		}
 	}
+
 }

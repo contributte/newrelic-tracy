@@ -4,6 +4,7 @@ namespace VrtakCZ\NewRelic\Tracy;
 
 class Bootstrap
 {
+
 	/**
 	 * @param string[]|array|NULL $logLevel (null for default - error and critical)
 	 * @param string|NULL $appName
@@ -15,6 +16,10 @@ class Bootstrap
 
 		if (!static::isEnabled()) {
 			return;
+		}
+
+		if (!interface_exists('Tracy\ILogger')) {
+			require_once __DIR__ . '/ILogger.php';
 		}
 
 		if ($appName === NULL) {
@@ -62,4 +67,5 @@ class Bootstrap
 			throw new \RuntimeException('Missing NewRelic extension.');
 		}
 	}
+
 }

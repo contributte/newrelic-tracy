@@ -4,6 +4,7 @@ namespace VrtakCZ\NewRelic\Tracy\Custom;
 
 class Parameters
 {
+
 	/**
 	 * @param string
 	 * @param mixed
@@ -14,4 +15,5 @@ class Parameters
 			newrelic_add_custom_parameter($name, $value);
 		}
 	}
+
 }

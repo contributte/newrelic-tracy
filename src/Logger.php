@@ -2,12 +2,9 @@
 
 namespace VrtakCZ\NewRelic\Tracy;
 
-if (!interface_exists('Tracy\ILogger')) {
-	require_once __DIR__ . '/ILogger.php';
-}
-
 class Logger implements \Tracy\ILogger
 {
+
 	/** @var \Tracy\ILogger */
 	private $oldLogger;
 
@@ -45,4 +42,5 @@ class Logger implements \Tracy\ILogger
 
 		return $exceptionFile;
 	}
+
 }

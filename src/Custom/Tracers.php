@@ -4,6 +4,7 @@ namespace VrtakCZ\NewRelic\Tracy\Custom;
 
 class Tracers
 {
+
 	/**
 	 * @param string functionName / ClassName::functionName
 	 */
@@ -13,4 +14,5 @@ class Tracers
 			newrelic_add_custom_tracer($function);
 		}
 	}
+
 }
