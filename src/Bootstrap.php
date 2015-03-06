@@ -17,7 +17,7 @@ class Bootstrap
 			return;
 		}
 
-		if ($appName !== NULL) {
+		if ($appName === NULL) {
 			$appName = 'PHP Application';
 		}
 
