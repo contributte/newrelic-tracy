@@ -11,9 +11,6 @@ class Logger implements \Tracy\ILogger
 	/** @var string[] */
 	private $logLevels;
 
-	/** @var bool */
-	public $directory = TRUE; // workaround https://github.com/nette/tracy/pull/74
-
 	/**
 	 * @param array $logLevels
 	 */
