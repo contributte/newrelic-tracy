@@ -23,7 +23,7 @@ before_install:
 
 install:
   - composer install --no-interaction --prefer-source --ignore-platform-reqs
-  - if  [ $PREFER_LOWEST = 'true' ]; then composer update --prefer-lowest --prefer-stable; fi
+  - if  [ $PREFER_LOWEST = 'true' ]; then composer update --prefer-lowest --prefer-stable --ignore-platform-reqs; fi
 
 script:
   - vendor/bin/parallel-lint -e php,phpt src
