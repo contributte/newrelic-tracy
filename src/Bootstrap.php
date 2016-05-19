@@ -25,11 +25,11 @@ class Bootstrap
 		static::setup($appName, $license);
 
 		if ($logLevel === NULL) {
-			$logLevel = array(
+			$logLevel = [
 				\Tracy\Logger::CRITICAL,
 				\Tracy\Logger::EXCEPTION,
 				\Tracy\Logger::ERROR,
-			);
+			];
 		}
 
 		$logger = new Logger($logLevel);

@@ -8,31 +8,31 @@ class Logger implements \Tracy\ILogger
 	/** @var \Tracy\ILogger */
 	private $oldLogger;
 
-	/** @var array */
-	private $logLevel;
+	/** @var string[] */
+	private $logLevels;
 
 	/** @var bool */
 	public $directory = TRUE; // workaround https://github.com/nette/tracy/pull/74
 
 	/**
-	 * @param array
+	 * @param array $logLevels
 	 */
-	public function __construct(array $logLevel)
+	public function __construct(array $logLevels)
 	{
 		$this->oldLogger = \Tracy\Debugger::getLogger();
-		$this->logLevel = $logLevel;
+		$this->logLevels = $logLevels;
 	}
 
 	/**
-	 * @param string|array
-	 * @param string
+	 * @param string|array $message
+	 * @param string $priority
 	 * @return string logged error filename
 	 */
 	public function log($message, $priority = NULL)
 	{
 		$exceptionFile = $this->oldLogger->log($message, $priority);
 
-		if (in_array($priority, $this->logLevel)) {
+		if (in_array($priority, $this->logLevels)) {
 			if (is_array($message)) {
 				$message = implode(' ', $message);
 			}

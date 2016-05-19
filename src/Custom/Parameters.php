@@ -6,8 +6,8 @@ class Parameters
 {
 
 	/**
-	 * @param string
-	 * @param mixed
+	 * @param string $name
+	 * @param mixed $value
 	 */
 	public static function addParameter($name, $value)
 	{

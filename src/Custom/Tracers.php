@@ -6,7 +6,7 @@ class Tracers
 {
 
 	/**
-	 * @param string functionName / ClassName::functionName
+	 * @param string $function functionName / ClassName::functionName
 	 */
 	public static function addTracer($function)
 	{
