@@ -19,14 +19,11 @@
 	"autoload": {
 		"psr-4": {
 			"VrtakCZ\\NewRelic\\Tracy\\": "src/"
-		},
-		"files": [
-			"src/compatability.php"
-		]
+		}
 	},
 	"require": {
 		"php": "~5.5|~7.0",
-		"tracy/tracy": "~2.2,<2.4.0"
+		"tracy/tracy": "~2.3,<2.4.0"
 	},
 	"require-dev": {
 		"jakub-onderka/php-console-highlighter": "~0.3.1",

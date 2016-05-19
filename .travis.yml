@@ -4,10 +4,10 @@ sudo: false
 
 env:
   - NETTE=default
-  - NETTE=~2.2.0
-  - NETTE=~2.2.0 PREFER_LOWEST=true
   - NETTE=~2.3.0
   - NETTE=~2.3.0 PREFER_LOWEST=true
+  - NETTE=~2.4.0
+  - NETTE=~2.4.0 PREFER_LOWEST=true
 
 php:
   - 5.5
@@ -27,4 +27,4 @@ install:
 
 script:
   - vendor/bin/parallel-lint -e php,phpt src
-  - vendor/bin/phpcs -sp --standard=vendor/nella/coding-standard/Nella/ruleset.xml --ignore=src/ILogger.php src
+  - vendor/bin/phpcs -sp --standard=vendor/nella/coding-standard/Nella/ruleset.xml src
