@@ -5,8 +5,8 @@
 [![Composer Downloads](https://img.shields.io/packagist/dt/vrtak-cz/newrelic-tracy.svg?style=flat-square)](https://packagist.org/packages/vrtak-cz/newrelic-tracy)
 
 ## Requirements
-- Tracy >=2.4.0
-- PHP >=5.6.0
+- Tracy >=2.4
+- PHP >=7.1
 
 ## Installation
 
