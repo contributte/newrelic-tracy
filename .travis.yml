@@ -15,6 +15,7 @@ env:
   matrix:
     - TRACY=~2.4.0
     - TRACY=~2.5.0
+    - TRACY=~2.6.0
 
 matrix:
   fast_finish: true
@@ -23,6 +24,8 @@ matrix:
       env: TRACY=~2.4.0 COMPOSER_EXTRA_ARGS="--prefer-lowest --prefer-stable"
     - php: 7.1
       env: TRACY=~2.5.0 COMPOSER_EXTRA_ARGS="--prefer-lowest --prefer-stable"
+    - php: 7.1
+      env: TRACY=~2.6.0 COMPOSER_EXTRA_ARGS="--prefer-lowest --prefer-stable"
 
 before_install:
   - php .travis.composer.php
