@@ -7,8 +7,6 @@ cache:
     - $HOME/.composer/cache
 
 php:
-  - 5.6
-  - 7.0
   - 7.1
   - 7.2
 
@@ -20,9 +18,9 @@ env:
 matrix:
   fast_finish: true
   include:
-    - php: 5.6
+    - php: 7.1
       env: TRACY=~2.4.0 COMPOSER_EXTRA_ARGS="--prefer-lowest --prefer-stable"
-    - php: 5.6
+    - php: 7.1
       env: TRACY=~2.5.0 COMPOSER_EXTRA_ARGS="--prefer-lowest --prefer-stable"
 
 before_install:
