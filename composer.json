@@ -10,6 +10,12 @@
 			"email": "patrik@votocek.cz",
 			"homepage": "http://patrik.votocek.cz",
 			"role": "Developer"
+		},
+		{
+			"name": "Tomáš Jacík",
+			"email": "tomas@jacik.cz",
+			"homepage": "https://tomasjacik.cz",
+			"role": "Developer"
 		}
 	],
 	"support": {
