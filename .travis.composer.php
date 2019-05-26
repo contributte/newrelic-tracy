@@ -1,12 +1,11 @@
 <?php
 
-$version = getenv('NETTE');
-
-if (!$version || $version == 'default') {
+$version = getenv('TRACY');
+if (!$version) {
 	exit;
 }
 
-echo "Nette version " . $version . PHP_EOL;
+echo "Tracy version $version" . PHP_EOL;
 
 $file = __DIR__ . '/composer.json';
 $content = file_get_contents($file);
