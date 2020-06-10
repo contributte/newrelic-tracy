@@ -1,5 +1,9 @@
 # [NewRelic](http://newrelic.com) PHP agent integration for [Tracy](http://tracy.nette.org)
 
+> Deprecated, use [contributte/newrelic](https://github.com/contributte/newrelic).
+
+-----
+
 [![Build Status](https://img.shields.io/travis/Vrtak-CZ/NewRelic-Tracy.svg?style=flat-square)](https://travis-ci.org/Vrtak-CZ/NewRelic-Tracy)
 [![Latest Stable Version](https://img.shields.io/packagist/v/vrtak-cz/newrelic-tracy.svg?style=flat-square)](https://packagist.org/packages/vrtak-cz/newrelic-tracy)
 [![Composer Downloads](https://img.shields.io/packagist/dt/vrtak-cz/newrelic-tracy.svg?style=flat-square)](https://packagist.org/packages/vrtak-cz/newrelic-tracy)
