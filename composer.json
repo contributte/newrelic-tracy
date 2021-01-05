@@ -44,5 +44,10 @@
 		]
 	},
 	"minimum-stability": "dev",
-	"prefer-stable": true
+	"prefer-stable": true,
+	"extra": {
+		"branch-alias": {
+			"dev-master": "9.0.x-dev"
+		}
+	}
 }
