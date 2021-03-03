@@ -15,7 +15,7 @@
 ## Installation
 
 ```
-composer require vrtak-cz/newrelic-tracy
+$ composer require vrtak-cz/newrelic-tracy
 ```
 
 ### Tracy
