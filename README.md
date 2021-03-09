@@ -14,7 +14,7 @@
 
 ## Installation
 
-```
+```bash
 composer require vrtak-cz/newrelic-tracy
 ```
 
