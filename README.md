@@ -1,22 +1,27 @@
-# [NewRelic](http://newrelic.com) PHP agent integration for [Tracy](http://tracy.nette.org)
+![](https://heatbadger.now.sh/github/readme/contributte/newrelic-tracy/?deprecated=1)
 
-> Deprecated, use [contributte/newrelic](https://github.com/contributte/newrelic).
+<p align=center>
+    <a href="https://bit.ly/ctteg"><img src="https://badgen.net/badge/support/gitter/cyan"></a>
+    <a href="https://bit.ly/cttfo"><img src="https://badgen.net/badge/support/forum/yellow"></a>
+    <a href="https://contributte.org/partners.html"><img src="https://badgen.net/badge/sponsor/donations/F96854"></a>
+</p>
 
------
+<p align=center>
+    Website 🚀 <a href="https://contributte.org">contributte.org</a> | Contact 👨🏻‍💻 <a href="https://f3l1x.io">f3l1x.io</a> | Twitter 🐦 <a href="https://twitter.com/contributte">@contributte</a>
+</p>
 
-[![Build Status](https://img.shields.io/travis/Vrtak-CZ/NewRelic-Tracy.svg?style=flat-square)](https://travis-ci.org/Vrtak-CZ/NewRelic-Tracy)
-[![Latest Stable Version](https://img.shields.io/packagist/v/vrtak-cz/newrelic-tracy.svg?style=flat-square)](https://packagist.org/packages/vrtak-cz/newrelic-tracy)
-[![Composer Downloads](https://img.shields.io/packagist/dt/vrtak-cz/newrelic-tracy.svg?style=flat-square)](https://packagist.org/packages/vrtak-cz/newrelic-tracy)
+## Disclaimer
 
-## Requirements
-- Tracy >=2.4
-- PHP >=7.1
+| :warning: | This project is no longer being maintained. Please use [contributte/newrelic](https://github.com/contributte/newrelic).
+|---|---|
 
-## Installation
+| Composer | [`vrtak-cz/newrelic-tracy`](https://packagist.org/vrtak-cz/newrelic-tracy) |
+|---| --- |
+| Version | ![](https://badgen.net/packagist/v/vrtak-cz/newrelic-tracy) |
+| PHP | ![](https://badgen.net/packagist/php/vrtak-cz/newrelic-tracy) |
+| License | ![](https://badgen.net/github/license/contributte/newrelic-tracy) |
 
-```bash
-composer require vrtak-cz/newrelic-tracy
-```
+## Usage
 
 ### Tracy
 
@@ -32,5 +37,19 @@ $license = 'your_licence_key';
 \VrtakCZ\NewRelic\Tracy\Bootstrap::init($logLevel, $appName, $license); // all parameters are optional
 ```
 
-## License
-NewRelic Tracy is licensed under the MIT License - see the LICENSE file for details
+## Development
+
+This package was maintain by these authors.
+
+<a href="https://github.com/f3l1x">
+  <img width="80" height="80" src="https://avatars2.githubusercontent.com/u/538058?v=3&s=80">
+</a>
+
+<a href="https://github.com/Vrtak-CZ">
+  <img width="80" height="80" src="https://avatars2.githubusercontent.com/u/112567?v=3&s=80">
+</a>
+
+-----
+
+Consider to [support](https://contributte.org/partners.html) **contributte** development team.
+Also thank you for being used this package.
