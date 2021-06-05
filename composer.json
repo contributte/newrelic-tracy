@@ -1,53 +1,56 @@
 {
-	"name": "vrtak-cz/newrelic-tracy",
-	"description": "NewRelic PHP agent integration for Tracy",
-	"type": "library",
-	"keywords": ["tracy", "newrelic"],
-	"license": "MIT",
-	"authors": [
-		{
-			"name": "Patrik Votoček",
-			"email": "patrik@votocek.cz",
-			"homepage": "http://patrik.votocek.cz",
-			"role": "Developer"
-		},
-		{
-			"name": "Tomáš Jacík",
-			"email": "tomas@jacik.cz",
-			"homepage": "https://tomasjacik.cz",
-			"role": "Developer"
-		}
-	],
-	"support": {
-		"issues":"https://github.com/Vrtak-CZ/NewRelic-Tracy/issues",
-		"source":"https://github.com/Vrtak-CZ/NewRelic-Tracy"
-	},
-	"autoload": {
-		"psr-4": {
-			"VrtakCZ\\NewRelic\\Tracy\\": "src/"
-		}
-	},
-	"require": {
-		"php": ">=7.1",
-		"tracy/tracy": "~2.4"
-	},
-	"require-dev": {
-		"jakub-onderka/php-console-highlighter": "0.3.2",
-		"jakub-onderka/php-parallel-lint": "0.9.2",
-		"nella/coding-standard": "4.2.1"
-	},
-	"archive": {
-		"exclude": [
-			".gitignore",
-			"/.travis.yml",
-			"/.travis.composer.php"
-		]
-	},
-	"minimum-stability": "dev",
-	"prefer-stable": true,
-	"extra": {
-		"branch-alias": {
-			"dev-master": "9.0.x-dev"
-		}
-	}
+  "name": "vrtak-cz/newrelic-tracy",
+  "description": "NewRelic PHP agent integration for Tracy",
+  "type": "library",
+  "keywords": [
+    "tracy",
+    "newrelic"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Patrik Votoček",
+      "email": "patrik@votocek.cz",
+      "homepage": "http://patrik.votocek.cz",
+      "role": "Developer"
+    },
+    {
+      "name": "Tomáš Jacík",
+      "email": "tomas@jacik.cz",
+      "homepage": "https://tomasjacik.cz",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/Vrtak-CZ/NewRelic-Tracy/issues",
+    "source": "https://github.com/Vrtak-CZ/NewRelic-Tracy"
+  },
+  "autoload": {
+    "psr-4": {
+      "VrtakCZ\\NewRelic\\Tracy\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">=7.1",
+    "tracy/tracy": "~2.4"
+  },
+  "require-dev": {
+    "jakub-onderka/php-console-highlighter": "0.3.2",
+    "jakub-onderka/php-parallel-lint": "0.9.2",
+    "nella/coding-standard": "4.2.1"
+  },
+  "archive": {
+    "exclude": [
+      ".gitignore",
+      "/.travis.yml",
+      "/.travis.composer.php"
+    ]
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "extra": {
+    "branch-alias": {
+      "dev-master": "9.0.x-dev"
+    }
+  }
 }
