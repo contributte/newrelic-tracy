@@ -15,7 +15,7 @@
 | :warning: | This project is no longer being maintained. Please use [contributte/newrelic](https://github.com/contributte/newrelic).
 |---|---|
 
-| Composer | [`vrtak-cz/newrelic-tracy`](https://packagist.org/vrtak-cz/newrelic-tracy) |
+| Composer | [`vrtak-cz/newrelic-tracy`](https://packagist.org/packages/vrtak-cz/newrelic-tracy) |
 |---| --- |
 | Version | ![](https://badgen.net/packagist/v/vrtak-cz/newrelic-tracy) |
 | PHP | ![](https://badgen.net/packagist/php/vrtak-cz/newrelic-tracy) |
