@@ -39,7 +39,7 @@ $license = 'your_licence_key';
 
 ## Development
 
-This package was maintain by these authors.
+This package was maintained by these authors.
 
 <a href="https://github.com/f3l1x">
   <img width="80" height="80" src="https://avatars2.githubusercontent.com/u/538058?v=3&s=80">
